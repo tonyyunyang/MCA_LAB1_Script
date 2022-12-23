@@ -1,0 +1,5 @@
+bash ugly.for
+
+grep "Execution Cycles" outputs/**/**/ta.log.000 | grep convolution_5x5 | grep -Eo "[0-9]+\s" > output_convolution_5x5.csv
+
+grep "Execution Cycles" outputs/**/**/ta.log.000 | grep ucbqsort | grep -Eo "[0-9]+\s" > output_ucbqsort.csv
